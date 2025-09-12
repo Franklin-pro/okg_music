@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Music streaming platform color system */
+    --background: 210 11% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 210 11% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 210 11% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 15 100% 52%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 15 100% 65%;
+
+    --secondary: 210 11% 12%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 210 11% 10%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 15 100% 52%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 11% 15%;
+    --input: 210 11% 12%;
+    --ring: 15 100% 52%;
+
+    --radius: 0.5rem;
+
+    /* Music platform specific tokens */
+    --waveform-primary: 15 100% 52%;
+    --waveform-secondary: 210 11% 25%;
+    --player-background: 210 11% 4%;
+    --track-hover: 210 11% 10%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(15 100% 52%), hsl(15 100% 65%));
+    --gradient-track: linear-gradient(90deg, hsl(210 11% 8%), hsl(210 11% 12%));
+    
+    /* Shadows */
+    --shadow-primary: 0 4px 20px hsl(15 100% 52% / 0.3);
+    --shadow-card: 0 2px 10px hsl(210 11% 2% / 0.5);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-waveform: all 0.2s ease-out;
+
+    --sidebar-background: 210 11% 5%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 15 100% 52%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 210 11% 10%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 210 11% 15%;
+    --sidebar-ring: 15 100% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .animate-slow-zoom {
+    animation: slowZoom 20s ease-in-out infinite;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 0.6s;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slowZoom {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+}
