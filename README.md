@@ -1,73 +1,120 @@
-# Welcome to your Lovable project
+# 🎵 Okg-Music
 
-## Project info
+A modern music streaming platform built with React, TypeScript, and Tailwind CSS. Discover, stream, and connect with artists from around the world.
 
-**URL**: https://lovable.dev/projects/2d5386bd-5da3-4ea2-a859-1b00bf937c77
+## ✨ Features
 
-## How can I edit this code?
+- **Unlimited Music Streaming** - Access millions of tracks across all genres
+- **Artist Discovery** - Connect with emerging and established artists worldwide
+- **High-Quality Audio** - Crystal clear sound with advanced streaming technology
+- **Responsive Design** - Seamless experience across all devices
+- **Modern UI/UX** - Built with shadcn/ui components and Tailwind CSS
 
-There are several ways of editing your application.
+## 🚀 Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18, TypeScript, Vite
+- **Styling**: Tailwind CSS, shadcn/ui
+- **Routing**: React Router DOM
+- **State Management**: React Context API, TanStack Query
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Package Manager**: npm/bun
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2d5386bd-5da3-4ea2-a859-1b00bf937c77) and start prompting.
+## 📦 Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/okg-music.git
+   cd okg-music
+   ```
 
-**Use your preferred IDE**
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   bun install
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+3. **Start development server**
+   ```bash
+   npm run dev
+   # or
+   bun dev
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+4. **Open your browser**
+   Navigate to `http://localhost:5173`
 
-Follow these steps:
+## 🛠️ Available Scripts
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run build:dev` - Build for development
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📁 Project Structure
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # shadcn/ui components
+│   ├── Header.tsx      # Navigation header
+│   ├── Player.tsx      # Music player
+│   └── ...
+├── contexts/           # React contexts
+├── hooks/              # Custom React hooks
+├── pages/              # Route components
+│   ├── Index.tsx       # Home page
+│   ├── Discover.tsx    # Music discovery
+│   ├── Artists.tsx     # Artists page
+│   └── ...
+├── assets/             # Static assets
+└── lib/                # Utility functions
 ```
 
-**Edit a file directly in GitHub**
+## 🎨 Key Components
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **Music Player** - Full-featured audio player with controls
+- **Artist Cards** - Interactive artist profiles and information
+- **Track Items** - Individual song components with play functionality
+- **Playlist Management** - Create and manage custom playlists
+- **Genre Cards** - Browse music by genre categories
 
-**Use GitHub Codespaces**
+## 🌐 Pages
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **Home** - Landing page with hero section and features
+- **Discover** - Explore new music and trending tracks
+- **Artists** - Browse and follow your favorite artists
+- **Pricing** - Subscription plans and pricing information
+- **Login** - User authentication
 
-## What technologies are used for this project?
+## 🎯 Getting Started
 
-This project is built with:
+1. Visit the home page to explore the platform
+2. Navigate to "Discover" to browse music
+3. Check out "Artists" to find new talent
+4. Use the music player to control playback
+5. Explore different genres and create playlists
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🤝 Contributing
 
-## How can I deploy this project?
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-Simply open [Lovable](https://lovable.dev/projects/2d5386bd-5da3-4ea2-a859-1b00bf937c77) and click on Share -> Publish.
+## 📄 License
 
-## Can I connect a custom domain to my Lovable project?
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Yes, you can!
+## 🙏 Acknowledgments
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- Built with [shadcn/ui](https://ui.shadcn.com/) components
+- Icons by [Lucide](https://lucide.dev/)
+- Powered by [Vite](https://vitejs.dev/) and [React](https://reactjs.org/)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+
+**Made with ❤️ for music lovers everywhere**
