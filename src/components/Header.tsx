@@ -143,7 +143,7 @@ export const Header = () => {
 
         {/* Actions */}
         <div className="flex items-center gap-3">
-          <Button variant="outline" size="sm" className="hidden sm:flex">
+          <Button onClick={() => navigate("/upload")} variant="outline" size="sm" className="hidden sm:flex">
             <Upload className="w-4 h-4 mr-2" />
             Upload
           </Button>
